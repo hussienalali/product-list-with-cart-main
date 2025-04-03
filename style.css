@@ -1,0 +1,315 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body 
+{
+    background-color: hsl(13, 31%, 94%);
+  
+
+}
+.continer
+{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    margin: 5px auto;
+}
+#opacity
+{
+    opacity: 0.5;
+}
+.item-continer
+{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.item-continer >p 
+{
+font-size: 25px;
+font-weight: 800;
+width: 100%;
+}
+.cart
+{
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+   
+}
+.cart >p:first-of-type
+{
+    font-size: 20px;
+font-weight: 800;
+color:  hsl(14, 86%, 42%);
+}
+.cart >p:last-of-type
+{
+text-align: center;
+color: hsl(14, 25%, 72%);
+}
+.item-continer > div 
+{
+    width: 225px;
+    padding: 15px;
+}
+.item-continer > div >img 
+{
+    width: 100%;
+    border-radius: 10px;
+}
+.item-continer > div >div
+{
+    padding: 9px;
+    display: flex
+;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 70%;
+    margin: 0px auto;
+    transform: translateY(-26px);
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+      border: 1px solid  transparent;
+}
+.item-continer > div >div:hover
+{      border: 1px solid  hsl(14, 86%, 42%) ;
+  
+}
+.item-continer > div >div img 
+{
+    width: 15px;
+}
+.item-continer > div >p:nth-of-type(1)
+{
+    font-size: 16px;
+    color: hsl(12, 20%, 44%); 
+}
+.item-continer > div >p:nth-of-type(2)
+{
+    font-size: 16px;
+    color:  hsl(14, 65%, 9%); 
+}
+.item-continer > div >p:nth-of-type(3)
+{
+    font-size: 16px;
+    color: hsl(14, 86%, 42%); 
+}
+.activebutton span
+{
+
+    justify-content: space-between;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+   font-weight: 800;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+ 
+}
+.activebutton span:hover
+{
+    background-color: white;
+    color:hsl(14, 86%, 42%) ;
+}
+.cart >div
+{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-bottom:  1px solid rgb(180, 177, 177);
+    justify-content: space-between;
+}
+.cart >div>div
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    
+}
+.cart >div>div >p:first-of-type
+{
+    width: 100%;
+}
+.cart >div>div >p:nth-of-type(2)
+{
+    color: hsl(14, 86%, 42%);
+}
+.cart >div span
+{
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/images/icon-remove-item.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.confirmButt
+{
+    background-color: hsl(14, 86%, 42%) ;
+    color: white;
+    font-size: 16px;
+    padding:  5px 10px;
+    margin:  10px auto;
+    width: 100%;
+    border-radius: 20px;
+    border: transparent;
+    cursor: pointer;
+}
+.confirmButt:hover
+{
+    background-color: rgb(148, 16, 16);
+}
+.conformBox
+{
+    position: absolute;
+    display: flex
+;
+    flex-direction: column;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    background-color: white;
+}
+.conformBox >img 
+{
+    width: 50px;
+}
+.conformBox >div 
+{
+        display: flex ;
+        background-color: hsl(13, 31%, 94%);
+        padding: 10px;
+        flex-direction: column;
+        border-radius: 10px;
+}
+.conformBox >div  img 
+{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border-radius: 4px;
+    
+}
+.conformBox >div >div 
+{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    padding: 10px;
+}
+.conformBox >div >div >div
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5px;
+}
+.conformBox >div >div >div p:first-of-type
+{
+    width: 100%;
+}
+.conformBox >div >div >div p:nth-of-type(3)
+{
+    font-size: 25px;
+    transform: translate(225px , -20px);
+
+}
+.conformBox >div >div >div p:nth-of-type(2)
+{
+    color:hsl(14, 86%, 42%) ;
+    margin-left: 5px;
+}
+.conformBox >div >div >div p:nth-of-type(4)
+{
+    transform: translatex(-40px);
+    color: gray;
+
+}
+.conformBox >div >div:last-of-type
+{
+
+    display: flex;
+    justify-content: space-between;
+    border: transparent;
+}
+.conformBox button 
+{
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 20px;
+    border: transparent;
+    background-color: hsl(14, 86%, 42%) ;
+    color: white;
+    cursor: pointer;
+
+}
+.conformBox >p:nth-of-type(2)
+{
+    margin: 7px 0px;
+    color: gray;
+    font-size: 14px;
+
+}
+@media(max-width:1000px)
+{
+    .continer
+    {
+        width: 700px;
+    }
+}
+@media(max-width:700px)
+{
+    .continer
+    {
+        width: 70%;
+        flex-direction: column;
+    }
+    .cart
+    {
+        width: 90%;
+        margin: 0px auto;
+    }
+    .item-continer > div
+    {
+        width: 80%;
+        margin: auto;
+    }
+    .item-continer
+    {
+        width: 100%;
+    }
+    .conformBox
+    {
+        display: flex
+        ;
+                flex-direction: column;
+                width: 400px;
+      
+                padding: 20px;
+                background-color: white;
+             
+                position: relative;
+    }
+    .conformBox >div >div >div p:nth-of-type(3) {
+        font-size: 25px;
+        transform: translate(200px, -20px);
+    }
+}
