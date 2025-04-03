@@ -1,4 +1,4 @@
-//varibles
+// المتغيرات
 const itemContien = document.getElementById("item-contain");
 const cartContien = document.getElementById("cart");
 const Numberof = document.getElementById("Number");
@@ -264,21 +264,16 @@ function displayaddtocart (number)
     zero.parentElement.click()
     
  }
-function showconfirm (index)
+function showconfirm ()
 { const conformBox =document.createElement("div") 
     conformBox.className="conformBox"
-
-  
-
-
     let continer =document.createElement("div")
-
     const iconRight = document.createElement("img")
     iconRight.src ="./assets/images/icon-order-confirmed.svg"
     const title =createTextElement("h1","order confirmed")
     const paragraph =createTextElement("p","we are happy you enjoy our food")
     const itemcontiner = document.createElement("div")
-       conformBox.appendChild(iconRight)
+    conformBox.appendChild(iconRight)
     conformBox.appendChild(title )
     conformBox.appendChild(paragraph)
     let items =document.querySelectorAll(".cart >div")
@@ -291,12 +286,8 @@ function showconfirm (index)
             
             const clone =el.cloneNode(true);
             clone.insertBefore(imageitem1, clone.firstChild);
-
-           continer.appendChild(clone)
-           
-       
+            continer.appendChild(clone)
         }
-       
     })
     const total = document.getElementById("total price").parentElement
     const startNewOrder =createTextElement("button","start new order")
@@ -304,13 +295,13 @@ startNewOrder.addEventListener(`click`,()=>{
 const deletbutoon= document.querySelectorAll("#delete")
 deletbutoon.forEach((el)=>{
     el.click()
+    startNewOrder.parentElement.remove()
 })
 continerall.id =""
-startNewOrder.parentElement.remove()
 
 
 })
-    continer.appendChild(total)
+    continer.appendChild(total.cloneNode(true))
 conformBox.appendChild(continer)
 conformBox.appendChild(startNewOrder)
 
