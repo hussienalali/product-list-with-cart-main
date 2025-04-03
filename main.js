@@ -1,4 +1,4 @@
-// المتغيرات
+//varibles
 const itemContien = document.getElementById("item-contain");
 const cartContien = document.getElementById("cart");
 const Numberof = document.getElementById("Number");
@@ -29,7 +29,7 @@ dataJson.onload = function () {
      
         const addButton = document.createElement("div");
         const iconAddToCart = document.createElement("img");
-        iconAddToCart.src = "/assets/images/icon-add-to-cart.svg";
+        iconAddToCart.src = "./assets/images/icon-add-to-cart.svg";
         const addButtonText = document.createElement("p");
         addButtonText.textContent = "Add to cart";
         addButton.appendChild(iconAddToCart);
@@ -140,10 +140,10 @@ const removebuutonfromcart = document.createElement("span")
     const rightSec = document.createElement("div");
     const nameElement = createTextElement("p", name);
     const countElement = createTextElement("p", count);
-    countElement.id = `refresh-${index}`; // معرف فريد للعدد
+    countElement.id = `refresh-${index}`; // id for count
     const priceElement = createTextElement("p", `$${price}`);
     const totalPriceElement = createTextElement("p", `$${count * parseFloat(price)}`);
-    totalPriceElement.id = `refrishTotal-${index}`; // معرف فريد للسعر الإجمالي
+    totalPriceElement.id = `refrishTotal-${index}`; // id for total price
 removebuutonfromcart.id ="delete"
     rightSec.appendChild(nameElement);
     rightSec.appendChild(countElement);
@@ -274,7 +274,7 @@ function showconfirm (index)
     let continer =document.createElement("div")
 
     const iconRight = document.createElement("img")
-    iconRight.src ="/assets/images/icon-order-confirmed.svg"
+    iconRight.src ="./assets/images/icon-order-confirmed.svg"
     const title =createTextElement("h1","order confirmed")
     const paragraph =createTextElement("p","we are happy you enjoy our food")
     const itemcontiner = document.createElement("div")
