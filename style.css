@@ -152,7 +152,7 @@ color: hsl(14, 25%, 72%);
 {
     width: 20px;
     height: 20px;
-    background-image: url(/assets/images/icon-remove-item.svg);
+    background-image: url("./assets/images/icon-remove-item.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
